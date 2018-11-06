@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             SmsManager smsManager = SmsManager.getDefault();
             for (int i = 0; i < contactList1.size(); i++) {
-                smsManager.sendTextMessage(contactList1.get(i), null, "HELP ME/n" +s , null, null);
+                smsManager.sendTextMessage(contactList1.get(i), null, "HELP ME\n" +s , null, null);
             }
         }catch(Exception e)
         { e.printStackTrace();}
